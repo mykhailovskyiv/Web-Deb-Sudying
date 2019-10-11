@@ -1,0 +1,1119 @@
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+	url('../fonts/ProximaNova-Bold.woff') format('woff'),
+	url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+	url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+
+	font-family: 'Proxima Nova Rg';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+	url('../fonts/ProximaNova-Regular.woff') format('woff'),
+	url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+	url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Proxima Nova', sans-serif;
+	margin: 0 auto;
+	min-width: 320px;
+}
+
+.header {
+	background-image: url("../img/football.png");
+	background-color: #161231;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	max-width: 1550px;
+	margin: 0 auto;
+	position: relative;
+}	
+
+.head {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	margin-bottom: 309px;
+	.logo {
+		margin-top: 54px;
+	}
+	.tagline {
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 34.49px;
+		text-transform: uppercase;
+		letter-spacing: 0.7px;
+		color: #ffffff;
+		margin-top: 65px;
+	}
+}
+.vector_header {
+	position: absolute;
+	bottom: 330px;
+    left: 450px;
+}
+
+.heading {
+	float: left;
+	color: #ffffff;
+	font-size: 90px;
+	font-weight: 700;
+	line-height: 100px;
+	text-transform: uppercase;
+	letter-spacing: 4.96px;
+
+}
+
+.heading.two {
+	float: right;
+	letter-spacing: 4.5px;
+}	
+
+.clearfix {
+	clear: both;
+}
+
+.menu {
+	float: right;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	.link {
+		color: #9071ea;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 34.49px;
+		text-transform: uppercase;
+		letter-spacing: 0.7px; 
+		text-decoration: none;
+		margin-left: 41px;
+	}
+}
+
+.clearfix {
+	clear: both;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	padding-bottom: 110px;
+	.button {
+		display: block; 
+		box-shadow: 0 16px 24px #0a0e34;
+		background-color: #5e42b0;
+		text-decoration: none;
+		border-radius: 30px;
+		margin-left: 50px;
+		margin-top: 181px;
+		padding-left: 30px;
+		.button_title {
+			position: relative;
+			padding: 20px 75px 20px 95px;
+			display: block;
+
+			.button_title_one {
+				margin: 0;
+			text-align: left;
+			vertical-align: top;
+			color: #ffffff;
+			font-size: 14px;
+			text-transform: uppercase; 
+			}
+			.button_title_two {
+				text-align: left;
+			vertical-align: top;
+			color: #ffffff;
+				font-size: 14px;
+				font-weight: 700;
+				text-transform: uppercase; 
+			}	
+		}
+			.button_title.app::before {
+			content: url('../img/icon_apple.png');
+			position: absolute;
+			left: 10%;
+
+		}
+
+		.button_title.goog::before {
+			content: url('../img/icon_google.png');
+			position: absolute;
+			left: 10%;
+		}
+	}
+}
+
+@media (max-width: 1580px) {
+	.container {
+		max-width: 735px;
+	}
+	.vector_header {
+		left: 269px;
+		bottom: 535px;
+	}
+	.heading {
+		display: block;
+		float: none;
+		font-size: 64px;
+		letter-spacing: 3.2px;
+		line-height: 90px;
+		text-align: left;
+		margin-left: 69px;
+
+	}
+	.heading.two {
+		margin-left: 177px;
+		margin-bottom: 154px;
+	}
+	.menu {
+		float: none;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.link {
+			font-size: 16px;
+			letter-spacing: 0.8;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.container {
+		max-width: 300px;
+		.head {
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-bottom: 141px;
+			.tagline {
+				display: none;
+			}
+		}
+		.vector_header {
+			display: none;
+		}
+		.heading {
+			font-size: 28px;
+			letter-spacing: 1.76px;
+			line-height: 31.32px;
+			margin-left: 0;
+			margin-bottom: 28px;
+		}
+		.heading.two {
+			margin-left: 60px;
+			line-height: 40.32px;
+		}
+		.column_adaptive {
+			display: flex;
+			flex-direction: column;
+			.menu {
+				order: 2;
+				justify-content: space-around;
+				.link {
+					margin-left: 25px;
+					font-size: 12px;
+				}			
+			}
+			.buttons {
+				order: 1;
+				padding-bottom: 60px;
+				.button {
+					display: block; 
+					box-shadow: 0 16px 24px #0a0e34;
+					background-color: #5e42b0;
+					text-decoration: none;
+					border-radius: 30px;
+					margin-left: 10px;
+					margin-top: 21px;
+					.button_title {
+						position: relative;
+						padding: 18px 11px 20px 29px;
+						width: 115px;
+
+						.button_title_one {
+							font-size: 8px;
+						}
+						.button_title_two {
+							font-size: 8px;
+							font-weight: 700;
+						}
+					}	
+						.button_title.app::before {
+							content: url('../img/icon_apple.png');
+							position: absolute;
+							left: -10%;
+							transform: scale(0.6);
+   		    				bottom: 10%;
+						}
+
+						.button_title.goog::before {
+							content: url('../img/icon_google.png');
+							position: absolute;
+							left: -10%;
+							transform: scale(0.6);
+   		   				    bottom: 10%;
+						}	
+				}	
+			}
+		}
+	} 
+}
+.container.main {
+	max-width: 1500px;
+}
+
+.footballer {
+	position: relative;
+	margin-top: 26px;
+	.player { 
+		max-width: 50%;
+		position: absolute; 
+	}
+	.card_content {
+		float: right;
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 50%;
+		margin: 0;
+		margin-right: 50px;
+		margin-bottom: 60px;
+		.plusone {
+			width: 20px;
+  		    height: 20px;
+  		    position: relative;
+  		    right: 620px;
+  		    top: 120px;
+		}
+		.athlets {
+			color: #e7e7e7;
+			font-size: 90px;
+			font-weight: 700;
+			line-height: 60px;
+			text-transform: uppercase;
+		}
+		.player_two {
+			display: none;
+		}
+		.card{
+			display: flex;
+			flex-direction: column;
+			.athlets_title {
+				display: flex;
+				.athlets_title_text {
+					margin-left: 10px;
+					margin-top: 5px;
+					color: #c1c1c1;
+					font-size: 36px;
+					font-weight: 700;
+					line-height: 34.49px;
+					text-transform: uppercase;
+					letter-spacing: 1.8px;
+				}
+				.number {
+					color: #000000;
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 34.49px;
+					text-transform: uppercase;
+					margin-bottom: 20px;
+					border-bottom: 4px solid #5e42b0;
+				}
+			}
+			.athlets_description {
+				flex-wrap: wrap;
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 28px;
+				letter-spacing: 1px;
+			}
+
+		} 
+	}
+	.cleafix {
+		clear: both;
+	}
+}
+
+.container_foot.two {
+	background-color: #f5f5f7;
+	.container.main {
+		.card.three{
+			float: right;
+			.athlets_title {
+				.number {
+					color: #000000;
+					border-bottom: 4px solid #5e42b0;
+				}					
+			}
+			.athlets_description {
+				color: black;
+			}
+			.radios {
+				display: none;
+				.radio {
+					width: 10px;
+					height: 12px;
+					border: none;
+					background-color: #d8d8d8;
+					border-radius: 50%;
+					margin-right: 15px;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+
+}	
+
+.container_foot {
+	background-color: #5e42b0; 
+	.container.main {
+		.card.three {
+			max-width: 50%;
+			float: right;
+			padding: 91px 0 92px 0;
+		    margin-right: 50px;
+			.athlets_title {
+				display: flex;
+				.athlets_title_text {
+					margin-left: 10px;
+					margin-top: 5px;
+					color: #c1c1c1;
+					font-size: 36px;
+					font-weight: 700;
+					line-height: 34.49px;
+					text-transform: uppercase;
+					letter-spacing: 1.8px;
+				}
+				.number {
+					color: #000000;
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 34.49px;
+					text-transform: uppercase;
+					margin-bottom: 20px;
+					border-bottom: 4px solid #ffffff;
+				}
+			}
+			.athlets_description {
+				color: #ffffff;
+				flex-wrap: wrap;
+				font-size: 20px;
+				line-height: 28px;
+				letter-spacing: 1px;
+			}
+		}
+		.clearfix {
+			clear: both;
+		}
+	}
+}
+@media (max-width: 1580px) {
+	.container.main {
+		max-width: 745px;
+	}
+	.player {
+		position: relative;
+		right: 650px;
+	}
+	.card_content {
+		display: block;
+		float: none; 
+		max-width: 60%;
+		.plusone {
+			display: none;
+		}
+		.athlets {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.card {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.container.main {
+		max-width: 320px;
+	}
+	.footballer {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		position: relative;
+		.player {
+			display: none;
+
+		}
+		.card_content {
+			display: flex;
+			max-width: 100%;
+			justify-content: center;
+			margin-right: 0;
+			margin-bottom: -55px;
+
+			.athlets {
+				order: 1;
+				font-size: 50px;
+				font-weight: 700;
+			}
+			.player_two {
+				display: block;
+				order: 2;
+			}
+			.card {
+				display: none;
+			}
+			.card.three {
+				display: none;
+				padding: 0 5px 0 5px;
+				.athlets_title {
+					.number {
+						font-size: 14px;
+						margin-bottom: 10px;
+						border-bottom: 2px solid #5e42b0;
+
+					}
+					.athlets_title_text {
+						font-size: 28px;
+					}
+				}
+				.athlets_description {
+					font-size: 15px;
+				}
+			} 
+
+		}
+
+	}
+	.container_foot {
+		display: none;
+	}
+	.container_foot.two  {
+		display: flex;
+		.container.main {
+			width: 320px;
+			display: flex;
+			justify-content: center;
+			flex-wrap:wrap;
+			.card.three {
+				max-width: 90%;
+				float: none;
+				margin-right: 0;
+				.athlets_title {
+					.number {
+						font-size: 14px;
+						margin-bottom: 10px;
+						border-bottom: 2px solid #5e42b0;
+
+					}
+					.athlets_title_text {
+						font-size: 28px;
+					}
+				}
+				.athlets_description {
+					font-size: 15px;
+				}
+				.radios {
+					display: flex; 
+					justify-content:center;
+					.radio.two {
+						background-color: #5c3caf;
+					}
+				}
+			}	
+		} 
+	}
+}	
+
+* {
+	box-sizing: border-box;
+}	
+
+.footballer.two {
+	position: relative;
+	margin-top: 0;
+	.player.basket { 
+		max-width: 50%;
+		position: absolute; 
+		left: 600px;
+	}
+	.player.basket.two {
+		display: none;
+		width: 50%;
+		position: relative; 
+		left: 330px;
+   	    bottom: -260px;
+	}
+	.card_content {
+		margin-top: 100px;
+		float: left;
+		.player.basket.three {
+			display: none;
+		}
+		.plusone {
+			width: 20px;
+  		    height: 20px;
+  		    position: relative;
+  		    left: 450px;
+  		    top: 30px;
+		}
+	}
+}
+
+.container_foot.three {
+	background-color: #f5f5f7;
+	.container.main {
+		.card.three{
+			float: left;
+			.athlets_title {
+				.number {
+					color: #000000;
+					border-bottom: 4px solid #5e42b0;
+				}					
+			}
+			.athlets_description {
+				color: black;
+			}
+		}
+	}
+
+}	
+
+.container_foot.four {
+	background-color: #0a0e34; 
+	.container.main {
+		.card.three {
+			float: left;
+			.athlets_title {
+				.number {
+					color: #9173e6;
+					border-bottom: 4px solid #ffffff;
+				}
+			}
+			.radios {
+				display: none;
+				.radio {
+					width: 10px;
+					height: 12px;
+					border: none;
+					background-color: #d8d8d8;
+					border-radius: 50%;
+					margin-right: 15px;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}		
+
+@media (max-width: 1580px) {
+
+	.footballer.two {
+		.player.basket {
+			display: none;
+		}
+		.player.basket.two {
+			display: block;
+			position: absolute;  
+
+		}	 
+		.card_content {
+			display: block;
+			float: none; 
+			max-width: 60%;
+			margin-left: 20px;
+			.plusone {
+				top: -60px;
+			}
+		}
+		.athlets {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.card {
+			display: flex;
+			flex-wrap: wrap;
+		}	
+	}
+	.container_foot.three {
+		.container.main {
+			.card.three {
+				margin-left: 20px;
+			}
+		}
+	}
+	.container_foot.four {
+		.container.main {
+			.card.three {
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.footballer.two {
+		.player.basket {
+			display: none;
+		}
+		.player.basket.two {
+			display: none;
+		}
+		.card_content {
+			margin: 0;
+			max-width: 100%;
+			display: flex;
+			.plusone {
+				display: none;
+			}
+			.athlets {
+				order: 1;
+			}
+			.player.basket.three {
+				display: block;
+				margin: 0;
+				max-width: 100%;
+				position: relative;
+				left: 0;
+				order: 2;
+			}
+			.card {
+				display: none;
+			}
+
+		}
+	}
+	.container_foot.four {
+		display: flex;
+		justify-content:center;
+		background-color: #f5f4f9;
+		.container.main {
+			.card.three {
+				margin: 0 0 0 10px;
+				max-width: 100%;
+				.athlets_title {
+					.number {
+						font-size: 14px;
+						margin-bottom: 10px;
+						border-bottom: 2px solid #5e42b0;
+					}
+					.athlets_title_text {
+						font-size: 28px;
+					}
+				}
+				.athlets_description {
+					font-size: 15px;
+					color: black;
+				}
+				.radios {
+					display: flex; 
+					justify-content:center;
+					.radio.three {
+						background-color: #5c3caf;
+					}
+				}
+			}
+		}
+	}
+}	
+
+* {
+	box-sizing: border-box;
+}	
+
+.step {
+	min-height: 730px;
+	display: flex;
+	.photo {
+		width: 50%;
+		background-image: url('../img/man1.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.step_content {
+		padding: 245px 128px 122px 128px;
+		max-width: 790px;
+		width: 100%;
+		position: relative;
+		.cube {
+			width: 168px;
+			height: 155px;
+			background-color: #5e42b0;
+			color: #f5f6f7;
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 34.49px;
+			text-transform: uppercase;
+			letter-spacing: 1.2px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 211px;
+			left: -84px;
+			.cube_number {
+				&::after {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 5px;
+					border-radius: 2px;
+					background-color: #ffffff;
+					opacity: 0.3;
+				}
+			}
+		}
+		.step_title {
+			color: #e6e6e6;
+			font-size: 90px;
+			font-weight: 700; 
+			text-transform: uppercase;
+		}
+		.step_description {
+			color: #000000;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 28px;
+			letter-spacing: 1.2px;
+			min-height: 174px;
+			position: relative;
+			padding-bottom: 20px;
+			margin-top: 101px;
+			padding-left: 5px;
+			max-width: 333px;
+			&::after {
+				content: '';
+				display: block;
+				width: 22px;
+				height: 5px;
+				border-radius: 2px;
+				background-color: #5e42b0;
+				position: absolute;
+				bottom: 0;
+				padding-left: 5px;
+			}
+		}
+	}
+}
+.step.two {
+	.photo {
+		order:2;
+		background-image: url('../img/man2.png');
+	}
+	.step_content.two {
+		margin-left: auto;
+		padding-left: 10px;
+		padding-right: 20px;
+		.cube {
+			left: auto;
+			right: -84px;
+		}
+		.step_description {
+			max-width: 400px;
+
+		}
+	}
+}
+.step.three {
+	.photo {
+		background-image: url('../img/man3.png');
+	}
+	.step_content {
+		.step_description {
+			max-width: 522px;
+		}
+	}
+}
+
+@media (max-width: 1580px) {
+	.step {
+		flex-direction: column;
+		.photo {
+			height: 584px;
+			width: 100%;
+		}
+		.step_content {
+			padding: 72px 34px 63px 27px;
+			max-width: 100%;
+			.cube {
+				width: 116px;
+				height: 116px;
+				top: -80px;
+				left: 33px;
+			}
+			.step_description {
+				margin-top: 18px;
+				padding-bottom: 30px;
+				max-width: 100%;
+
+			}
+		}
+	}
+
+	.step.two {
+		.photo {
+			order: 0;
+		}
+		.step_content.two {
+			.cube {
+				left: 33px;
+			}
+		}
+	}	
+}
+
+@media (max-width: 767px) {
+	.step {
+		.step_content {
+			.cube {
+				width: 70px;
+				height: 70px;
+				top: -50px;
+			}
+			.step_title {
+				font-size: 28px;
+				font-weight: 700;
+				line-height: 34.49px;
+				text-transform: uppercase;
+				letter-spacing: 1.4px;
+			}
+			.step_description {
+				font-size: 24px;
+				font-weight: 400;
+				line-height: 28px;
+				letter-spacing: 1.2px;
+			}
+		}
+	}
+}
+
+.footer {
+	background-image: url('../img/back2.png');
+	background-color: #161231;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.footer_title {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		padding-top: 247px;
+		padding-bottom: 163px;
+		.footer_description {
+			margin-left: 36px;
+			display: flex;
+			flex-direction:column;
+			position: relative;
+			.footer_text {
+				color: #ffffff;
+				font-size: 90px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 4.96px;
+			}
+			.footer_text_two {
+				color: #a496ca;
+				font-size: 36px;
+				font-weight: 700;
+				line-height: 34.49px;
+				text-transform: uppercase;
+			}
+			.vector {
+				position: absolute;
+			    left: 30px;
+   				bottom: -2px;
+			}
+			.vector.two {
+				left: 388px;
+    			bottom: -93px;
+			}
+			.vector_footer {
+				display: none;
+			}
+			.vector_footer_two {
+				display: none;
+			}
+		}
+	}
+	.buttons {
+		padding-bottom: 0;
+		.button {
+			margin-top: 0;
+		}
+	}
+	.footer_two {
+		margin-top: 197px;
+		padding: 71px 60px 70px 60px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background-image: url('../img/footer_back.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		.social_media {
+			 padding-left: 150px;
+			.social_logo {
+				margin-left: 41px;
+			}
+		}
+		.contact_us {
+			color: #ffffff;
+			font-size: 20px;
+			font-weight: 400;
+			letter-spacing: 1px;
+			align-self: center;
+		}
+	}
+}
+@media (max-width: 1580px) {
+	.footer{
+		.footer_title {
+			flex-direction: column;
+			.logo_footer{
+				order:0;
+				align-self: center;
+			}
+			.footer_description {
+				width: 725px;
+				margin-top: 82px;
+				margin-left: 0;
+				.footer_text {
+					font-size: 80px;
+					font-weight: 700;
+					line-height: 60px;
+					text-transform: uppercase;
+					letter-spacing: 4.85px;
+					margin-bottom: 31px;
+				}
+				.vector {
+					left: 10px;
+				}
+				.vector.two {
+					left: 320px;
+				}
+			}
+		}
+		.footer_two {
+			justify-content: center;
+			.logo_two {
+				display: none;
+			}
+			.social_media {
+				padding-left: 0;
+			}
+			.contact_us {
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.footer{
+		.footer_title {
+			padding-bottom: 72px;
+			padding-top: 97px;
+			.footer_description {
+				margin-left: 0;
+				.vector {
+					display: none;
+				}
+				.vector_footer {
+					display: block;
+					position: absolute;
+					left: 5px;
+					top: 55px;
+				}
+				.vector_footer_two {
+					display: block;
+					position: absolute;
+					left: 145px;
+					top: 28px;
+				}
+				.footer_text {
+					margin-top: 57px;
+					color: #ffffff;
+					font-size: 34px;
+					font-weight: 700;
+					text-transform: uppercase;
+					letter-spacing: 1.7px;
+					margin-bottom: 0;
+				}
+				.footer_text_two {
+					font-size: 15px;
+					font-weight: 700;
+					text-transform: uppercase;
+					letter-spacing: 0.75px;
+				}
+			}
+		}
+		.buttons {
+			.button {
+				display: block; 
+				box-shadow: 0 16px 24px #0a0e34;
+				background-color: #5e42b0;
+				text-decoration: none;
+				border-radius: 30px;
+				margin-left: 10px;
+				margin-top: 21px;
+				.button_title {
+					position: relative;
+					padding: 18px 11px 20px 29px;
+					width: 115px;
+
+					.button_title_one {
+						font-size: 8px;
+					}
+					.button_title_two {
+						font-size: 8px;
+						font-weight: 700;
+					}
+				}	
+				.button_title.app::before {
+					content: url('../img/icon_apple.png');
+					position: absolute;
+					left: -10%;
+					transform: scale(0.6);
+					bottom: 10%;
+				}
+
+				.button_title.goog::before {
+					content: url('../img/icon_google.png');
+					position: absolute;
+					left: -10%;
+					transform: scale(0.6);
+					bottom: 10%;
+				}	
+			}
+		}		
+		.footer_two {
+			justify-content: center;
+			.logo_two {
+				display: none;
+			}
+			.social_media {
+				padding-left: 0;
+			}
+			.contact_us {
+				display: none;
+			}
+		}
+	}
+} 	
